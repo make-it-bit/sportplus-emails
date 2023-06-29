@@ -1,7 +1,7 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//const HtmlInlineCssWebpackPlugin = require('html-inline-css-webpack-plugin').default;
+const HtmlInlineCssWebpackPlugin = require('html-inline-css-webpack-plugin').default;
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -34,14 +34,13 @@ module.exports = {
       filename: 'index.html',
       chunks: ['index'],
     }),
-    //new HtmlInlineCssWebpackPlugin(),
+    new HtmlInlineCssWebpackPlugin(),
   ],
 
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'src'),
     },
-    /* miks hosti vaja? webpack ametlikul lehel ka polnud seda näidetes! */
     compress: true,
     port: 8080,
   },

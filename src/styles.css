@@ -1,5 +1,5 @@
 * {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 body {
@@ -38,7 +38,7 @@ a {
 
 #header td,
 #footer td {
-  text-align: center;
+  text-align: left;
 }
 
 .body {
@@ -49,13 +49,13 @@ a {
 
 .body th,
 .body td {
-  border: solid 0.5px #595859;
+  border: solid 1px #595859;
   padding: 10px;
 }
 
 .body th {
   width: 140px;
-  background-color: #c5c5c5;
+  background-color: #f8f7f8;
 }
 
 .vertical-table th {
