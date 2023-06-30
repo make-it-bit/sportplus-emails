@@ -1,8 +1,9 @@
 * {
   font-family: 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
 }
 
-body {
+#main-container {
   display: flex;
   justify-content: center;
   background-color: #c5c5c5;

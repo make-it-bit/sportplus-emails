@@ -4,9 +4,10 @@
   \******************************************************************/
 * {
   font-family: 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
 }
 
-body {
+#main-container {
   display: flex;
   justify-content: center;
   background-color: #c5c5c5;
@@ -79,93 +80,95 @@ a {
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc3R5bGVzLmNzcyIsIm1hcHBpbmdzIjoiOzs7QUFBQTtFQUNFLDZDQUE2QztBQUMvQzs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIseUJBQXlCO0VBQ3pCLFVBQVU7RUFDVixTQUFTO0FBQ1g7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2IsWUFBWTtBQUNkOztBQUVBOzs7RUFHRSxXQUFXO0FBQ2I7O0FBRUE7O0VBRUUsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLHlCQUF5QjtFQUN6QixtQkFBbUI7QUFDckI7O0FBRUE7O0VBRUUseUJBQXlCO0VBQ3pCLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFlBQVk7RUFDWix5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vc3BvcnRwbHVzLWVtYWlsLy4vc3JjL3N0eWxlcy5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiKiB7XHJcbiAgZm9udC1mYW1pbHk6ICdIZWx2ZXRpY2EnLCAnQXJpYWwnLCBzYW5zLXNlcmlmO1xyXG59XHJcblxyXG5ib2R5IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNjNWM1YzU7XHJcbiAgcGFkZGluZzogMDtcclxuICBtYXJnaW46IDA7XHJcbn1cclxuXHJcbmgxIHtcclxuICBtYXJnaW46IDEwcHggMCAwIDA7XHJcbn1cclxuXHJcbmgyIHtcclxuICBtYXJnaW46IDAgMCAyMHB4IDA7XHJcbn1cclxuXHJcbmEge1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxuI2NvbnRhaW5lciB7XHJcbiAgbWF4LXdpZHRoOiA2MDBweDtcclxuICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcclxuICBwYWRkaW5nOiAxMHB4O1xyXG4gIG1hcmdpbjogMjVweDtcclxufVxyXG5cclxuI2hlYWRlcixcclxuLmJvZHksXHJcbiNmb290ZXIge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4jaGVhZGVyIHRkLFxyXG4jZm9vdGVyIHRkIHtcclxuICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG59XHJcblxyXG4uYm9keSB7XHJcbiAgdGV4dC1hbGlnbjogbGVmdDtcclxuICBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlO1xyXG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XHJcbn1cclxuXHJcbi5ib2R5IHRoLFxyXG4uYm9keSB0ZCB7XHJcbiAgYm9yZGVyOiBzb2xpZCAxcHggIzU5NTg1OTtcclxuICBwYWRkaW5nOiAxMHB4O1xyXG59XHJcblxyXG4uYm9keSB0aCB7XHJcbiAgd2lkdGg6IDE0MHB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmOGY3Zjg7XHJcbn1cclxuXHJcbi52ZXJ0aWNhbC10YWJsZSB0aCB7XHJcbiAgYm9yZGVyLWxlZnQ6IG5vbmU7XHJcbn1cclxuXHJcbi52ZXJ0aWNhbC10YWJsZSB0ZCB7XHJcbiAgYm9yZGVyLXJpZ2h0OiBub25lO1xyXG59XHJcblxyXG4jZm9vdGVyIHtcclxuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG59XHJcblxyXG4jZm9vdGVyIGEge1xyXG4gIGZvbnQtc2l6ZTogMTJweDtcclxufVxyXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=*/</style></head>
-  <div id="container">
-    <table id="header">
-      <tr>
-        <td><h1>SportPlus</h1></td>
-      </tr>
-      <tr>
-        <td><h2>Tellimuse nr: #356892</h2></td>
-      </tr>
-    </table>
-    <table class="body vertical-table">
-      <tr>
-        <th>nimi</th>
-        <td>Sebastian Pikand</td>
-      </tr>
-      <tr>
-        <th>email</th>
-        <td><a href="#">sebastianpikand@gmail.com</a></td>
-      </tr>
-      <tr>
-        <th>telefon</th>
-        <td>+37253454610</td>
-      </tr>
-      <tr>
-        <th>aadress</th>
-        <td>Kustavi 4</td>
-      </tr>
-      <tr>
-        <th>riik</th>
-        <td>Eesti</td>
-      </tr>
-      <tr>
-        <th>linn</th>
-        <td>Tallinn</td>
-      </tr>
-      <tr>
-        <th>postiindeks</th>
-        <td>76901</td>
-      </tr>
-      <tr>
-        <th>märkus</th>
-        <td>...</td>
-      </tr>
-    </table>
-    <table class="body horizontal-table">
-      <tr>
-        <th>Toode</th>
-        <th>Suurus</th>
-        <th>Värv</th>
-        <th>Kogus</th>
-        <th>Hind</th>
-      </tr>
-      <tr>
-        <td>Sonyaconcept naiste pluus Darcy</td>
-        <td>L</td>
-        <td>Pink</td>
-        <td>1</td>
-        <td>19.95€</td>
-      </tr>
-      <tr>
-        <td>Sonyaconcept naiste pluus Darcy</td>
-        <td>M</td>
-        <td>Yellow</td>
-        <td>1</td>
-        <td>19.95€</td>
-      </tr>
-    </table>
-    <table class="body vertical-table">
-      <tr>
-        <th>Vahesumma</th>
-        <td>31.92€</td>
-      </tr>
-      <tr>
-        <th>Käibemaks</th>
-        <td>7.98€</td>
-      </tr>
-      <tr>
-        <th>KOKKU</th>
-        <td>39.90€</td>
-      </tr>
-    </table>
-    <table id="footer">
-      <tr>
-        <td>
-          <a target="_blank" href="https://sportplus.vercel.app/shipping-and-returns">TAGASTUSVORM</a>
-        </td>
-      </tr>
-    </table>
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc3R5bGVzLmNzcyIsIm1hcHBpbmdzIjoiOzs7QUFBQTtFQUNFLDZDQUE2QztFQUM3QyxTQUFTO0FBQ1g7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLHlCQUF5QjtFQUN6QixVQUFVO0VBQ1YsU0FBUztBQUNYOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQix5QkFBeUI7RUFDekIsYUFBYTtFQUNiLFlBQVk7QUFDZDs7QUFFQTs7O0VBR0UsV0FBVztBQUNiOztBQUVBOztFQUVFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQix5QkFBeUI7RUFDekIsbUJBQW1CO0FBQ3JCOztBQUVBOztFQUVFLHlCQUF5QjtFQUN6QixhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxZQUFZO0VBQ1oseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQiIsInNvdXJjZXMiOlsid2VicGFjazovL3Nwb3J0cGx1cy1lbWFpbC8uL3NyYy9zdHlsZXMuY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIioge1xyXG4gIGZvbnQtZmFtaWx5OiAnSGVsdmV0aWNhJywgJ0FyaWFsJywgc2Fucy1zZXJpZjtcclxuICBtYXJnaW46IDA7XHJcbn1cclxuXHJcbiNtYWluLWNvbnRhaW5lciB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjYzVjNWM1O1xyXG4gIHBhZGRpbmc6IDA7XHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcblxyXG5oMSB7XHJcbiAgbWFyZ2luOiAxMHB4IDAgMCAwO1xyXG59XHJcblxyXG5oMiB7XHJcbiAgbWFyZ2luOiAwIDAgMjBweCAwO1xyXG59XHJcblxyXG5hIHtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbn1cclxuXHJcbiNjb250YWluZXIge1xyXG4gIG1heC13aWR0aDogNjAwcHg7XHJcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XHJcbiAgcGFkZGluZzogMTBweDtcclxuICBtYXJnaW46IDI1cHg7XHJcbn1cclxuXHJcbiNoZWFkZXIsXHJcbi5ib2R5LFxyXG4jZm9vdGVyIHtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuI2hlYWRlciB0ZCxcclxuI2Zvb3RlciB0ZCB7XHJcbiAgdGV4dC1hbGlnbjogbGVmdDtcclxufVxyXG5cclxuLmJvZHkge1xyXG4gIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcclxuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG59XHJcblxyXG4uYm9keSB0aCxcclxuLmJvZHkgdGQge1xyXG4gIGJvcmRlcjogc29saWQgMXB4ICM1OTU4NTk7XHJcbiAgcGFkZGluZzogMTBweDtcclxufVxyXG5cclxuLmJvZHkgdGgge1xyXG4gIHdpZHRoOiAxNDBweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjhmN2Y4O1xyXG59XHJcblxyXG4udmVydGljYWwtdGFibGUgdGgge1xyXG4gIGJvcmRlci1sZWZ0OiBub25lO1xyXG59XHJcblxyXG4udmVydGljYWwtdGFibGUgdGQge1xyXG4gIGJvcmRlci1yaWdodDogbm9uZTtcclxufVxyXG5cclxuI2Zvb3RlciB7XHJcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxufVxyXG5cclxuI2Zvb3RlciBhIHtcclxuICBmb250LXNpemU6IDEycHg7XHJcbn1cclxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9*/</style></head>
+  <div id="main-container">
+    <div id="container">
+      <table id="header">
+        <tr>
+          <td><h1>SportPlus</h1></td>
+        </tr>
+        <tr>
+          <td><h2>Tellimuse nr: #356892</h2></td>
+        </tr>
+      </table>
+      <table class="body vertical-table">
+        <tr>
+          <th>nimi</th>
+          <td>Sebastian Pikand</td>
+        </tr>
+        <tr>
+          <th>email</th>
+          <td><a href="#">sebastianpikand@gmail.com</a></td>
+        </tr>
+        <tr>
+          <th>telefon</th>
+          <td>+37253454610</td>
+        </tr>
+        <tr>
+          <th>aadress</th>
+          <td>Kustavi 4</td>
+        </tr>
+        <tr>
+          <th>riik</th>
+          <td>Eesti</td>
+        </tr>
+        <tr>
+          <th>linn</th>
+          <td>Tallinn</td>
+        </tr>
+        <tr>
+          <th>postiindeks</th>
+          <td>76901</td>
+        </tr>
+        <tr>
+          <th>märkus</th>
+          <td>...</td>
+        </tr>
+      </table>
+      <table class="body horizontal-table">
+        <tr>
+          <th>Toode</th>
+          <th>Suurus</th>
+          <th>Värv</th>
+          <th>Kogus</th>
+          <th>Hind</th>
+        </tr>
+        <tr>
+          <td>Sonyaconcept naiste pluus Darcy</td>
+          <td>L</td>
+          <td>Pink</td>
+          <td>1</td>
+          <td>19.95€</td>
+        </tr>
+        <tr>
+          <td>Sonyaconcept naiste pluus Darcy</td>
+          <td>M</td>
+          <td>Yellow</td>
+          <td>1</td>
+          <td>19.95€</td>
+        </tr>
+      </table>
+      <table class="body vertical-table">
+        <tr>
+          <th>Vahesumma</th>
+          <td>31.92€</td>
+        </tr>
+        <tr>
+          <th>Käibemaks</th>
+          <td>7.98€</td>
+        </tr>
+        <tr>
+          <th>KOKKU</th>
+          <td>39.90€</td>
+        </tr>
+      </table>
+      <table id="footer">
+        <tr>
+          <td>
+            <a target="_blank" href="https://sportplus.vercel.app/shipping-and-returns">TAGASTUSVORM</a>
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
 </html>

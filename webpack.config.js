@@ -34,7 +34,7 @@ module.exports = {
       filename: 'index.html',
       chunks: ['index'],
     }),
-    new HtmlInlineCssWebpackPlugin(),
+    new HtmlInlineCssWebpackPlugin() /* in order for the devServer to work properly, comment this out */,
   ],
 
   devServer: {
